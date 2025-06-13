@@ -25,3 +25,10 @@ sudo nano /boot/config.txt
 
 And make sure that ```enable_uart=1``` exists, it can typically be found near the bottom of the file.
 
+# Using the MotorDriver Class
+```python
+from MotorDriver import MotorDriver
+motor_driver = MotorDriver()
+motor_driver.move_motor(1, 10) ## Moves the first motor by 10% of its maximum RPM.
+motor_driver.move_motor(2, -20) ## Moves the second motor by 20% of its maximum RPM in the inverse direction.
+```
