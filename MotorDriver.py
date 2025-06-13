@@ -1,7 +1,7 @@
 import serial
 
 class MotorDriver:
-    def __init__(self, port="/dev/ttyS0", baudrate=9600):
+    def __init__(self, port="/dev/serial0", baudrate=9600):
         self.serial_object = serial.Serial(
             port=port,
             baudrate=baudrate,
