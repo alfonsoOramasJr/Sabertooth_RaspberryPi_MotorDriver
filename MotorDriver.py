@@ -12,7 +12,7 @@ class MotorDriver:
         )
 
         self.motor_ranges = {
-            1:[0, 127],
+            1:[1, 127],
             2:[128, 255]
         }
 
