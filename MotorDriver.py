@@ -13,7 +13,7 @@ class MotorDriver:
 
         self.motor_ranges = {
             1:[0, 127],
-            2:[128, 256]
+            2:[128, 255]
         }
 
     ## Closes the serial port when a object from this class is deleted.
