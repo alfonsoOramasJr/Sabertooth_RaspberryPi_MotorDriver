@@ -31,3 +31,12 @@ class MotorDriver:
         except KeyError:
             raise ValueError(f"Invalid motor_id: {motor_id}")
 
+    def move_motor(self, motor_id, speed_in_percentages):
+        motor_range_minimum, motor_range_maximum = self.get_motor_ranges(motor_id)
+        motor_throttle = self.map_value(
+            speed_in_percentages,
+            -100, 100,
+            motor_range_minimum, motor_range_maximum
+        )
+        byte_value = int(round(motor_throttle))
+        self.serial_object.write(byte_value.to_bytes(1, "little"))
