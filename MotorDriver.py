@@ -17,7 +17,7 @@ class MotorDriver:
         }
 
     ## Closes the serial port when a object from this class is deleted.
-    def __del__(self):
+    def close(self):
         if self.serial_object and self.serial_object.isOpen():
             self.serial_object.close()
     
