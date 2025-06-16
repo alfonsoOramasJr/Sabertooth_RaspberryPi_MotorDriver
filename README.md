@@ -47,5 +47,13 @@ For the using the python software "out of the box," choose the ```9600 Baud Rate
 
 If communication is not reliable, it is recommended to decrease the baud rate.
 
-## Connecting the transmit line
+## Connecting the Transmit Line
 From the host, connect the transmit line to S1. The host's receive line is not connected to the Sabertooth in Standard Simplified Serial Mode.
+
+Note that when using a raspberry pi, you need to utilize a level shifter to send commands to the Sabertooh Driver. Something like this,
+
+![alt text](<Logic Level Shifter.png>)
+
+_Remember to not use the receive line in Simplified Serial Mode._
+
+![alt text](<Level Shifter Connections.png>)
