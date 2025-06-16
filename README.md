@@ -31,6 +31,9 @@ from MotorDriver import MotorDriver
 motor_driver = MotorDriver()
 motor_driver.move_motor(1, 10) ## Moves the first motor by 10% of its maximum RPM.
 motor_driver.move_motor(2, -20) ## Moves the second motor by 20% of its maximum RPM in the inverse direction.
+
+motor_driver.move_motor(1, 0) ## Stops the first motor.
+motor_driver.stop_all_motors() ## Stops all motors simultaneously by disabling output drive to the motors.
 ```
 
 # Sabertooth Simplified Serial Mode Information
