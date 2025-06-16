@@ -41,5 +41,5 @@ class MotorDriver:
         byte_value = int(round(motor_throttle))
         self.serial_object.write(byte_value.to_bytes(1, "little"))
     
-    def emergency_stop(self):
+    def stop_all_motors(self):
         self.serial_object.write((0).to_bytes(1, 'little'))
