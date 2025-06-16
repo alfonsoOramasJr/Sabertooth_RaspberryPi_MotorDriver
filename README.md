@@ -32,3 +32,17 @@ motor_driver = MotorDriver()
 motor_driver.move_motor(1, 10) ## Moves the first motor by 10% of its maximum RPM.
 motor_driver.move_motor(2, -20) ## Moves the second motor by 20% of its maximum RPM in the inverse direction.
 ```
+
+# Sabertooth Simplified Serial Mode Information
+## Standard Simplified Serial Mode
+For selecting the standard simplfied mode, mimic the following dip switch configuration, note that the baud rate is configured separately.
+![alt text](<Standard Simplified Serial Mode.png>)
+
+## Baud Rate is set by the Dip Switches
+![alt text](<Baud Rate.png>)
+For the using the python software "out of the box," choose the ```9600 Baud Rate``` configuration.
+
+If communication is not reliable, it is recommended to decrease the baud rate.
+
+## Connecting the transmit line
+From the host, connect the transmit line to S1. The host's receive line is not connected to the Sabertooth in Standard Simplified Serial Mode.
