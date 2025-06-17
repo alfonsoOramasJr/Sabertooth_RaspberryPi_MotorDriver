@@ -39,10 +39,10 @@ motor_driver.stop_all_motors() ## Stops all motors simultaneously by disabling o
 # Sabertooth Simplified Serial Mode Information
 ## Standard Simplified Serial Mode
 For selecting the standard simplfied mode, mimic the following dip switch configuration, note that the baud rate is configured separately.
-![alt text](<Standard Simplified Serial Mode.png>)
+![alt text](<README_IMAGES/Standard Simplified Serial Mode.png>)
 
 ## Baud Rate is set by the Dip Switches
-![alt text](<Baud Rate.png>)
+![alt text](<README_IMAGES/Baud Rate.png>)
 For the using the python software "out of the box," choose the ```9600 Baud Rate``` configuration.
 
 If communication is not reliable, it is recommended to decrease the baud rate.
@@ -52,8 +52,8 @@ From the host, connect the transmit line to S1. The host's receive line is not c
 
 Note that when using a raspberry pi, you need to utilize a level shifter to send commands to the Sabertooh Driver. Something like this,
 
-![alt text](<Logic Level Shifter.png>)
+![alt text](<README_IMAGES/Logic Level Shifter.png>)
 
 _Remember to not use the receive line in Simplified Serial Mode._
 
-![alt text](<Level Shifter Connections.png>)
+![alt text](<README_IMAGES/Level Shifter Connections.png>)
