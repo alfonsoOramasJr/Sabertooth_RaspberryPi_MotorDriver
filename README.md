@@ -1,3 +1,6 @@
+# Sabertooth Dual 60A 6V-30V Regenerative Motor Driver
+_Python software for the Sabertooth Motor Driver._
+
 # Enabling Hardware Serial Port
 Make sure to enable the hardware serial port through the interface options.
 
