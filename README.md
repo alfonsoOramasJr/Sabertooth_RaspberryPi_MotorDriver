@@ -46,7 +46,7 @@ For selecting the standard simplfied mode, mimic the following dip switch config
 
 ## Baud Rate is set by the Dip Switches
 ![alt text](<README_IMAGES/Baud Rate.png>)
-For the using the python software "out of the box," choose the ```9600 Baud Rate``` configuration.
+For using the python software "out of the box," choose the ```9600 Baud Rate``` configuration.
 
 If communication is not reliable, it is recommended to decrease the baud rate.
 
